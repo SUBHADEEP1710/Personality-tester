@@ -1,0 +1,95 @@
+.question-container {
+  margin: 20px 0;
+  color: rgb(21, 21, 21);
+  font-size: 16px;  
+  min-height: 150px;
+  text-align: center;
+  padding-top: 10px;
+  
+}
+.qsn{
+  margin: 20px 0;
+  color: rgb(21, 21, 21);
+  font-size: 23px;  
+  min-height: 70px;
+  text-align: center;
+  padding-top: 10px;
+  
+}
+
+.horizontal-slider {
+  width: 82%;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.thumb {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 7px solid #42b6cb;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -38%);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  z-index: 2; 
+}
+
+.track {
+  height: 5px;
+  background: #d7d7d795;
+  transform: translate(0%, 40%);
+  border-radius: 5px;
+  position: relative;
+
+}
+
+.horizontal-slider .track-0 {
+  background: #42b6cb;
+  height: 12px;
+  transform: translate(0%, -20%);
+  z-index: 1; 
+}
+
+.horizontal-slider .track-1 {
+  background: #bcbcbc6f;
+  z-index: 1; 
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.slider-labels span {
+  position: relative;
+  text-align: center;
+  flex: 1;
+}
+
+.slider-labels span::after {
+  content: '';
+  position: absolute;
+  top: -53px;
+  left: 50%;
+  right:50%;
+  transform: translate(-50%,10%);
+  width: 12px;
+  height: 12px;
+  background-color: #b6b6b6;
+  border-radius: 50%;
+}
+
+
+.horizontal-slider .track,
+.thumb {
+  transition: background 0.7s, top 0.9s;
+}

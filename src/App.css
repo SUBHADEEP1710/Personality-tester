@@ -1,38 +1,127 @@
-.App {
+body {
+  background: #8fcbd3;
+  color: #1f2a44;
+  font-family: lato, sans-serif; /* Add background color */
+}
+
+
+
+header {
+  align-items: center;
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  height: 105px;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.heading {
+  color: #e74b16;
+  flex: 1 1 auto;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.div {
+  display: block;
+  unicode-bidi: isolate;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  display: block;
+  unicode-bidi: isolate;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main .assessment {
+  background: white;
+  margin-bottom: 50px;
+  min-height: 580px;
+  width: 95%;
+}
+
+.main .container {
+  border-radius: 10px;
+  margin: 80px auto 0;
+  max-width: 1110px;
+}
+
+.css-8atqhb {
+  width: 100%;
+}
+
+.mui {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  -webkit-box-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.main .assessment .steps {
+  margin: 0 auto 50px;
+  min-height: 480px;
+  width: 80%;
+}
+
+main .assessment .steps .spacer {
+  height: 100px;
+  padding-top: 30px;
+}
+
+.progress-name {
+  color: black;
+  font-size: 21px;
+  text-align: center;
+  width: 100%;
+}
+
+.question-number {
+  color: red;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 70px auto 50px;
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.navigation-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0cb2a4;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  background-color: #9d9d9d;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:not(:disabled):hover {
+  background-color: #236b65;
+}
+
+button:not(:disabled):active {
+  transform: scale(0.95);
+}
+
+.question-number {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
 }
