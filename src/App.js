@@ -43,8 +43,8 @@ function App() {
         </header>
         <main className='main'>
           <div className="container assessment">
-            <div className='MuiBox-root css-8atqhb'>
-              <div className='mui'></div>
+            <div className='MuiBox'>
+              <div className='mul'></div>
             </div>
             <div>
               <div className='steps-container'>
