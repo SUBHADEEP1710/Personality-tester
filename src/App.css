@@ -1,14 +1,12 @@
 body {
   background: #8fcbd3;
   color: #1f2a44;
-  font-family: lato, sans-serif; /* Add background color */
+  font-family: lato, sans-serif; 
 }
-
-
 
 header {
   align-items: center;
-  background-color: rgb(253, 253, 253);
+  background-color: rgba(253, 253, 253, 0.966);
   display: flex;
   height: 105px;
   justify-content: center;
@@ -37,7 +35,7 @@ main {
 }
 
 .main .assessment {
-  background: white;
+  background: #ffff;
   margin-bottom: 50px;
   min-height: 580px;
   width: 95%;
